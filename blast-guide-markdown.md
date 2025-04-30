@@ -98,8 +98,8 @@ AGCATTGGTGG
 ### Studying the Evolution of Human Creatine Kinase in Mammalian
 - Use protein: NP_001815.2 = human creatine kinase
 - Use blastp to get some close creatine kinase in other species
-  - Run blastp + refseq_protein + Exclude
-  - Run blastp + refseq_protein + Model (XM/XP)
+  - Run blastp + refseq_protein 
+  - Run blastp + refseq_protein + Model (XM/XP) + Exclude "human"
 
 ## NCBI Accession Number for Workshop
 - NM_001824.5
