@@ -4,7 +4,7 @@ Practical skills in Biology:
   - Basic R Programming
 
 Requirement for this class
-  - laptops
+  - laptop
   - You have to install the R program on your laptop (https://cran.r-project.org/).
   - You have to install the R Studio on your laptop (https://posit.co/download/rstudio-desktop/).
   - You have to sign up for the GitHub account (https://github.com/).
