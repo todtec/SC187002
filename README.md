@@ -1,4 +1,4 @@
-# SC187002
+# SC187002 Practical skills in Biology (PSB)
 Practical skills in Biology: 
   - NCBI database and BLAST
   - Basic R Programming
