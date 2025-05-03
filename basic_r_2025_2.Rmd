@@ -1,0 +1,49 @@
+---
+title: "Untitled"
+author: "Todsapol Techo"
+date: "2025-05-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# Install a package (only needed once)
+#install.packages("dplyr")
+#install.packages("ggplot2")
+# Load the package (needed in each R session)
+library(dplyr)
+library(ggplot2)
+```
+
+```{r}
+df<-iris
+head(df)
+tail(df)
+```
+```{r}
+table(df$Species)
+```
+
+```{r}
+subset.df<-filter(df, Sepal.Length < 3 & Species == "setosa")
+subset.df<-filter(df, Sepal.Length < 3 | Species != "setosa")
+subset.df<-filter(df, Sepal.Length >= 6 & Species != "setosa" & Petal.Length < 5)
+
+```
+
+```{r}
+subset.df<-select(df, c(Species,Sepal.Width))
+```
+
+```{r}
+df2<-select(df, -Species)
+# Create a boxplot
+boxplot(df2,
+        main = "Plant Heights by Treatment",
+        ylab = "Height (cm)",
+        col = c("lightblue", "lightgreen", "salmon" , "yellow"))
+```
+
